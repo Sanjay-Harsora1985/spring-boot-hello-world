@@ -1,11 +1,11 @@
 FROM maven:3.5-jdk-8-alpine AS build
 
-MAINTAINER tech-tejendra
+MAINTAINER sharsora1985@gmail.com
 
 COPY src /home/app/src
 COPY pom.xml /home/app
 
-RUN mvn -f /home/app/pom.xml clean package
+#RUN mvn -f /home/app/pom.xml clean package
 
 EXPOSE 8082
 
